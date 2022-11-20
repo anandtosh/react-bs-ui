@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/anandtosh/react-bs-ui/static/css/main.e913995b.css",
+    "main.js": "/anandtosh/react-bs-ui/static/js/main.d76aeb70.js",
+    "static/js/787.3c52659f.chunk.js": "/anandtosh/react-bs-ui/static/js/787.3c52659f.chunk.js",
+    "index.html": "/anandtosh/react-bs-ui/index.html",
+    "main.e913995b.css.map": "/anandtosh/react-bs-ui/static/css/main.e913995b.css.map",
+    "main.d76aeb70.js.map": "/anandtosh/react-bs-ui/static/js/main.d76aeb70.js.map",
+    "787.3c52659f.chunk.js.map": "/anandtosh/react-bs-ui/static/js/787.3c52659f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e913995b.css",
+    "static/js/main.d76aeb70.js"
+  ]
+}
