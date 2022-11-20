@@ -2,36 +2,25 @@
 import React from 'react'
 import useStore from '../../../stores/index'
 import {AiOutlineDashboard} from 'react-icons/ai'
+import {BsTable} from 'react-icons/bs'
+import { NavLink } from 'react-router-dom'
+
+const getBtnClasses =({ isActive }) =>isActive ?"nav-link active py-3 border-bottom" : "nav-link py-3 border-bottom"
 
 export default function LeftSidebar() {
   const isOpen = useStore((state) => state.leftSidebar)
   return (
-    <div className={'dashboard-left-sidebar d-flex flex-column flex-shrink-0 bg-light '+ (isOpen?'dls-open' : 'dls-close text-center')}>
+    <div className={'dashboard-left-sidebar d-flex flex-column flex-shrink-0 bg-light position-fixed '+ (isOpen?'dls-open' : 'dls-close text-center')}>
       <ul class="nav nav-pills nav-flush flex-column mb-auto w-100">
         <li class="nav-item">
-          <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
-            <AiOutlineDashboard size={30} color="white"/><span className='dls-m-name'>Dashboard</span>
-          </a>
+          <NavLink to={'/dashboard/user'} className={getBtnClasses} aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+            <AiOutlineDashboard size={30}/><span className='dls-m-name'>Dashboard</span>
+          </NavLink>
         </li>
         <li>
-          <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
-            <AiOutlineDashboard size={30}/>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
-            <svg class="bi" width="24" height="24" role="img" aria-label="Orders"></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
-            <svg class="bi" width="24" height="24" role="img" aria-label="Products"></svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
-            <svg class="bi" width="24" height="24" role="img" aria-label="Customers"></svg>
-          </a>
+          <NavLink to={'/dashboard/table'} className={getBtnClasses} title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+            <BsTable size={30}/><span className='dls-m-name'>Table</span>
+          </NavLink>
         </li>
       </ul>
       <div class="dropdown">
@@ -49,3 +38,4 @@ export default function LeftSidebar() {
     </div>
   )
 }
+

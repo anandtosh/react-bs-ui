@@ -1,22 +1,24 @@
 import React from 'react'
 import { DashboardCard } from '../../styled/DashboardCard'
+import TableWithImages from '../../styled/tables/TableWithImages'
 
-export const User = () => {
+export const Table = () => {
   return (
     <>
       <DashboardCard
       header={
         <>
-          this is a header
+          table example
         </>
       }
       footer={
         <>
-          this is a footer
+            have footer
         </>
       }
       >
-        klsdkj
+        <h1>Table with images</h1>
+        <TableWithImages/>
       </DashboardCard>
     </>
   )
