@@ -14,12 +14,12 @@ export default function LeftSidebar() {
       <ul class="nav nav-pills nav-flush flex-column mb-auto w-100">
         <li class="nav-item">
           <NavLink to={'/dashboard/user'} className={getBtnClasses} aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
-            <AiOutlineDashboard size={30}/><span className='dls-m-name'>Dashboard</span>
+            <AiOutlineDashboard size={20}/><span className='dls-m-name'>Dashboard</span>
           </NavLink>
         </li>
         <li>
           <NavLink to={'/dashboard/table'} className={getBtnClasses} title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
-            <BsTable size={30}/><span className='dls-m-name'>Table</span>
+            <BsTable size={20}/><span className='dls-m-name'>Table</span>
           </NavLink>
         </li>
       </ul>
