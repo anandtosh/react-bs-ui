@@ -1,0 +1,13 @@
+.customTableWithImages th{
+    /* background-color: bisque; */
+    padding: 20px 10px;
+    font-weight: 500;
+    color: gray;
+}
+
+.customTableWithImages td{
+    padding: 20px 10px;
+}
+.customTableWithImages .bg-success-light{
+    background-color: rgb(188, 255, 188);
+}

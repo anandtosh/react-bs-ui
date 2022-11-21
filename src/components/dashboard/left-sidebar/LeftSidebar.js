@@ -3,6 +3,7 @@ import React from 'react'
 import useStore from '../../../stores/index'
 import {AiOutlineDashboard} from 'react-icons/ai'
 import {BsTable} from 'react-icons/bs'
+import {MdSnippetFolder} from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
 
 const getBtnClasses =({ isActive }) =>isActive ?"nav-link active py-3 border-bottom" : "nav-link py-3 border-bottom"
@@ -20,6 +21,11 @@ export default function LeftSidebar() {
         <li>
           <NavLink to={'/dashboard/table'} className={getBtnClasses} title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
             <BsTable size={20}/><span className='dls-m-name'>Table</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={'/dashboard/snippets'} className={getBtnClasses} title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+            <MdSnippetFolder size={20}/><span className='dls-m-name'>Snippets</span>
           </NavLink>
         </li>
       </ul>

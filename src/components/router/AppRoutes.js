@@ -5,6 +5,7 @@ import Home from '../home/Home'
 import Login from '../login/Login'
 import { Table } from '../pages/table/Table'
 import { User } from '../pages/user/User'
+import Snippets from '../pages/snippets'
 export default function AppRoutes() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ export default function AppRoutes() {
         <Route path={'/dashboard'} element={<Dashboard/>}>
           <Route path={'user'} element={<User/>}/>
           <Route path={'table'} element={<Table/>}/>
+          <Route path={'snippets'} element={<Snippets/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
