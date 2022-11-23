@@ -1,0 +1,20 @@
+.widgets-container{
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.user-widget .card-img-top{
+    aspect-ratio: 2 / 1;
+}
+
+.user-widget .card-body{
+    justify-content: space-between;
+}
+
+.user-widget .user-image, .user-widget-color .user-image{
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin-top: -50px;
+    box-shadow: -1px 2px 5px 0px rgb(130, 130, 130);
+}

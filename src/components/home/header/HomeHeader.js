@@ -19,11 +19,16 @@ export default function HomeHeader() {
             <a className="nav-link" href="#">Link</a>
             </li>
         </ul>
-            <NavLink to={'login'}  style={{ textDecoration: 'none' }}>
-                <button type="button" class="btn btn-primary">
-                        Login/Register
-                </button>
-            </NavLink>
+        <NavLink to={'/login'} className={'mx-1'} style={{ textDecoration: 'none' }}>
+            <button type="button" class="btn btn-primary">
+                    Login/Register
+            </button>
+        </NavLink>
+        <NavLink to={'/dashboard'} className={'mx-1'} style={{ textDecoration: 'none' }}>
+            <button type="button" class="btn btn-success">
+                    Dashboard
+            </button>
+        </NavLink>
         </div>
     </div>
     </nav>

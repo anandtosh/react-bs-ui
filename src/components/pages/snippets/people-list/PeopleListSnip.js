@@ -9,8 +9,8 @@ export default function PeopleListSnip() {
             <p class="card-text">Friend's List</p>
         </div>
         <ul class="list-group list-group-flush">
-            {[0,0,0].map(() => (
-            <li class="list-group-item d-flex">
+            {[0,1,2].map((i) => (
+            <li class="list-group-item d-flex" key={i}>
                 <div className='snip-img'>
                     <img src="https://picsum.photos/100/100" class="img rounded-circle img-thumbnail" width={70} alt=""/>
                 </div>
