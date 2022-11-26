@@ -5,6 +5,7 @@ import {AiOutlineDashboard} from 'react-icons/ai'
 import {BsTable} from 'react-icons/bs'
 import {MdSnippetFolder, MdWidgets} from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
+import { CgChart } from 'react-icons/cg'
 
 const getBtnClasses =({ isActive }) =>isActive ?"nav-link active py-3 border-bottom" : "nav-link py-3 border-bottom"
 
@@ -31,6 +32,11 @@ export default function LeftSidebar() {
         <li>
           <NavLink to={'/dashboard/widgets'} className={getBtnClasses} title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
             <MdWidgets size={20}/><span className='dls-m-name'>Widgets</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={'/dashboard/charts'} className={getBtnClasses} title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+            <CgChart size={20}/><span className='dls-m-name'>Widgets</span>
           </NavLink>
         </li>
       </ul>

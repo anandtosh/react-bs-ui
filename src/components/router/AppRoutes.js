@@ -7,6 +7,7 @@ import { Table } from '../pages/table/Table'
 import { User } from '../pages/user/User'
 import Snippets from '../pages/snippets'
 import Widgets from '../pages/widgets/Widgets'
+import Charts from '../pages/charts/Charts'
 export default function AppRoutes() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ export default function AppRoutes() {
           <Route path={'table'} element={<Table/>}/>
           <Route path={'snippets'} element={<Snippets/>}/>
           <Route path={'widgets'} element={<Widgets/>}/>
+          <Route path={'charts'} element={<Charts/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
