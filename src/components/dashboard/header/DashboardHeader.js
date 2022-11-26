@@ -1,5 +1,5 @@
 import React from 'react'
-import {CgMenu} from "react-icons/cg"
+import {CgDockLeft, CgDockRight} from "react-icons/cg"
 import { Link } from 'react-router-dom'
 import useStore from '../../../stores/index'
 export default function DashboardHeader() {
@@ -9,11 +9,19 @@ export default function DashboardHeader() {
 
   return (
     <div className='d-flex dashboard-header'>
-        <div className='menu-toggler' onClick={(e) => setLeftSidebar(!leftSidebar)}>
-            <CgMenu size={30} color={'white'}/>
+        <div className={'menu-toggler d-flex '+(leftSidebar? 'open' : '')}>
+            <div className={'menu-brand-name text-white '+(leftSidebar ? '' : 'd-none')}>
+              <h4>a2zcoder.com</h4>
+            </div>
+            {
+              leftSidebar ?
+              <CgDockLeft size={30} color={'white'} className={'mr-auto'}  onClick={(e) => setLeftSidebar(!leftSidebar)} style={{"cursor" : "pointer"}}/>
+              :
+              <CgDockRight size={30} color={'white'} className={'mr-auto'}  onClick={(e) => setLeftSidebar(!leftSidebar)} style={{"cursor" : "pointer"}}/>
+            }
         </div>
         <div className='menu-search'>
-            helsdf
+          lksjdfkljlf
         </div>
         <div className='menu-profile'>
             <Link to={'/login'}>Login</Link>

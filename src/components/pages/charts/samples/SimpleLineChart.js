@@ -21,7 +21,7 @@ export default function SimpleLineChart() {
                     <YAxis />
                     <Line type={'monotone'} dataKey="pv" stroke='blue' strokeDasharray={"8 5"}/>
                     <Line type={'monotone'} dataKey="uv" stroke='gray' strokeDasharray={"6 5"}/>
-                    <Tooltip wrapperStyle={{"opacity" : '0.5', "border" : "20px solid blue !important"}}/>
+                    <Tooltip wrapperStyle={{"border" :" 1px dashed gray"}} wrapperClassName="custom-tooltip-charts"/>
                     <Legend/>
                 </LineChart>
                 </ResponsiveContainer>

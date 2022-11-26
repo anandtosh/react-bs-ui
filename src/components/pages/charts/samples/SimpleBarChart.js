@@ -20,7 +20,7 @@ export default function SimpleBarChart() {
                     <CartesianGrid strokeDasharray={'3 3'}/>
                     <YAxis/>
                     <XAxis dataKey={'name'}/>
-                    <Tooltip wrapperStyle={{"opacity" : '0.8', 'border' : '1px dashed red'}} />
+                    <Tooltip wrapperStyle={{"border" :" 1px dashed gray"}} wrapperClassName="custom-tooltip-charts"/>
                     <Bar dataKey="pv" fill="#8884d8"/>
                     <Bar dataKey="uv" fill="#82ca9d" />
                     <Legend/>

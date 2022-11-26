@@ -3,6 +3,7 @@ import PieChart from './samples/PieChart'
 import SimpleAreaChart from './samples/SimpleAreaChart'
 import SimpleBarChart from './samples/SimpleBarChart'
 import SimpleLineChart from './samples/SimpleLineChart'
+import './charts.css'
 
 export default function Charts() {
   return (
