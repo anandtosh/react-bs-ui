@@ -1,6 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap'
 import AppRoutes from './components/router/AppRoutes';
+import './bs-custom.scss'
 
 
 function App() {
