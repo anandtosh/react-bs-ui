@@ -7,7 +7,7 @@ import {MdSnippetFolder, MdWidgets} from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
 import { CgChart } from 'react-icons/cg'
 
-const getBtnClasses =({ isActive }) =>isActive ?"nav-link active py-3 border-bottom" : "nav-link py-3 border-bottom"
+const getBtnClasses =({ isActive }) =>isActive ?"nav-link nav-link-danger active py-3 border-bottom" : "nav-link nav-link-danger py-3 border-bottom"
 
 export default function LeftSidebar() {
   const isOpen = useStore((state) => state.leftSidebar)

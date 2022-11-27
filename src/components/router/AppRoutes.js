@@ -8,6 +8,7 @@ import { User } from '../pages/user/User'
 import Snippets from '../pages/snippets'
 import Widgets from '../pages/widgets/Widgets'
 import Charts from '../pages/charts/Charts'
+import BootstrapCompnenets from '../pages/bootstrap/BootstrapCompnenets'
 export default function AppRoutes() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ export default function AppRoutes() {
         <Route path='/' element={<Home/>}/>
         <Route path={'/login'} element={<Login />} />
         <Route path={'/dashboard'} element={<Dashboard/>}>
+          <Route index element={<BootstrapCompnenets/>} />
           <Route path={'user'} element={<User/>}/>
           <Route path={'table'} element={<Table/>}/>
           <Route path={'snippets'} element={<Snippets/>}/>

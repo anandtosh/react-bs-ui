@@ -1,5 +1,47 @@
 
-
 // colors
 
-@import '~bootstrap/scss/bootstrap'
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$blue:    #004dc0 !default; //primary
+$indigo:  #5300d8 !default;
+$purple:  #5312ca !default; 
+$pink:    #b63173 !default;
+$red:     #c60014 !default; // danger
+$orange:  #e16602 !default; // warning
+$yellow:  #ffd559 !default;
+$green:   #00733d !default; //success
+$teal:    #00bd84 !default;
+$cyan:    #009fbf !default; //info
+
+// scss-docs-start theme-color-variables
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+$teal:          $teal;
+// scss-docs-end theme-color-variables
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "purple":     $purple,
+  "pink":       $pink
+);
+
+
+@import '~bootstrap/scss/bootstrap';
+
+@import 'css/nav';

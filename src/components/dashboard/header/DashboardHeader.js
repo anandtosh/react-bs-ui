@@ -8,8 +8,8 @@ export default function DashboardHeader() {
   const setLeftSidebar = useStore((state) => state.setLeftSidebar)
 
   return (
-    <div className='d-flex dashboard-header'>
-        <div className={'menu-toggler d-flex '+(leftSidebar? 'open' : '')}>
+    <div className='d-flex dashboard-header '>
+        <div className={'menu-toggler bg-purple d-flex '+(leftSidebar? 'open' : '')}>
             <div className={'menu-brand-name text-white '+(leftSidebar ? '' : 'd-none')}>
               <h4>a2zcoder.com</h4>
             </div>
