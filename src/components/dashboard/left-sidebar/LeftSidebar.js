@@ -7,7 +7,7 @@ import {MdSnippetFolder, MdWidgets} from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
 import { CgChart } from 'react-icons/cg'
 
-const getBtnClasses =({ isActive }) =>isActive ?"nav-link nav-link-danger active py-3 border-bottom" : "nav-link nav-link-danger py-3 border-bottom"
+const getBtnClasses =({ isActive }) =>isActive ?"nav-link nav-link-pink active py-3 border-bottom" : "nav-link nav-link-pink py-3 border-bottom"
 
 export default function LeftSidebar() {
   const isOpen = useStore((state) => state.leftSidebar)
@@ -36,7 +36,7 @@ export default function LeftSidebar() {
         </li>
         <li>
           <NavLink to={'/dashboard/charts'} className={getBtnClasses} title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
-            <CgChart size={20}/><span className='dls-m-name'>Widgets</span>
+            <CgChart size={20}/><span className='dls-m-name'>Charts</span>
           </NavLink>
         </li>
       </ul>

@@ -1,6 +1,6 @@
 import React from 'react'
 import {CgDockLeft, CgDockRight} from "react-icons/cg"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import useStore from '../../../stores/index'
 export default function DashboardHeader() {
   // toggle menu using store and save to state
@@ -8,10 +8,12 @@ export default function DashboardHeader() {
   const setLeftSidebar = useStore((state) => state.setLeftSidebar)
 
   return (
-    <div className='d-flex dashboard-header '>
-        <div className={'menu-toggler bg-purple d-flex '+(leftSidebar? 'open' : '')}>
+    <div className='d-flex dashboard-header bg-light '>
+        <div className={'menu-toggler bg-dark d-flex '+(leftSidebar? 'open' : '')}>
             <div className={'menu-brand-name text-white '+(leftSidebar ? '' : 'd-none')}>
-              <h4>a2zcoder.com</h4>
+              <NavLink to={'/'}>
+                <h4 className='text-white'>a2zcoder.com</h4>
+              </NavLink>
             </div>
             {
               leftSidebar ?
@@ -21,7 +23,7 @@ export default function DashboardHeader() {
             }
         </div>
         <div className='menu-search'>
-          lksjdfkljlf
+          b5sformin
         </div>
         <div className='menu-profile'>
             <Link to={'/login'}>Login</Link>

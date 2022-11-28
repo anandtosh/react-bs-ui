@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import ForgotPasswordForm from './ForgotPasswordForm'
 import './login.css'
 import LoginForm from './LoginForm'
@@ -34,7 +35,8 @@ export default function Login() {
                 <div className='login-card-body'>
                     {renderForm(formmode)}
                 </div>
-                <div className='login-card-footer d-flex justify-content-end'>
+                <div className='login-card-footer d-flex justify-content-between'>
+                    <NavLink to={'/dashboard'}>Dashboard</NavLink>
                     <a className='' onClick={(e) => {setFormMode(3)}}>forgot password</a>
                 </div>
             </div>

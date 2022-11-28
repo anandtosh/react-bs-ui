@@ -174,10 +174,17 @@
   @each $color,$value in $theme-colors {
     .nav-link-#{$color} {
       color: $value !important;
+
+      &:hover{
+        color: shift-color($value, $link-shade-percentage) !important;
+      }
     }
     .nav-link-#{$color}.active {
       color: white !important;
       background-color: $value !important;
+      &:hover{
+        background-color: shift-color($value, $link-shade-percentage) !important;
+      }
     }
   }
   
